@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+body {
+    margin: 0px;
+    background-color: rgb(10, 0, 10);
+}
+
+header {
+    background-image: url(image/phil-desforges-werrs0UfZvU-unsplash.jpg);
+    background-size: cover;
+    color: white;
+    padding: 100px;
+
+}
+
+.head {
+    width: 10%;
+}
+
+nav {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border-style: solid;
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+}
+
+.style {
+    text-align: center;
+    padding: 14px 16px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 15px;
+}
+
+.style a:hover {
+    color: rgb(196, 19, 19);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+.content {
+    border-style: solid;
+    border-radius: 20px;
+    line-height: 30px;
+    color: white;
+    font-size: large;
+}
+
+.card1 {
+    background-image: url(image/top-soft-skills-page-banner\ \(2\).jpg);
+    background-size: cover;
+    padding: 5%;
+    color: white;
+    border-radius: 15px;
+}
+
+.card2 {
+    background-image: url(image/amr-taha-bGnnr4cOujo-unsplash.jpg);
+    background-size: cover;
+    padding: 5%;
+    color: white;
+    border-radius: 15px;
+}
+
+.card3 {
+    background-image: url(image/kawe-rodrigues-jKmdjT7aQJA-unsplash.jpg);
+    background-size: cover;
+    padding: 5%;
+    color: white;
+    border-radius: 15px;
+}
+
+footer {
+    background-image: url(image/michael-pointner-Jcrof4rzM-w-unsplash.jpg);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 50px;
+
+}
+
+footer a {
+    padding: 14px 16px;
+    display: block;
+}
+
+footer a:hover {
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'cwTeXKai', serif;
+}
