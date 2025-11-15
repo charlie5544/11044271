@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人網頁</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
-  
   <body>
 
     <header>
@@ -23,9 +23,8 @@
 
     <nav>
       <div class="style">
-        <a href="#1">專業技能</a>
-        <a href="#2">程式技能</a>
-        <a href="#3">經歷</a>
+        <a href="#1">個人專業與技能</a>
+        <a href="#3">個人經歷</a>
         <a href="#4">聯絡資訊</a>
       </div>    
       <p>不管失敗多少次，都要面對生活，充滿希望。</p>
@@ -33,43 +32,138 @@
       <p>我具有創造性和想像力。能夠想出新的想法和解決問題的方法，不斷地挑戰傳統思維方式。</p>
       <p>我平常的興趣是研究遊戲和探索金融相關的知識。因為這些都可以令我想到很多奇妙的想法。</p>
     </nav>
-      
-        
-      <div class="column" id="1">
-        <h2 class="card1" >專業技能：</h2>
-        <ul class="content">
-              <li>前端網頁開發</li>
-              <li>後端網頁</li>
-              <li>製作量化交易策略</li>
-              <li>資料庫管理</li>
-        </ul>
-      </div>
-    
 
-    
-      <div class="column" id="2">
-        <h2 class="card2">程式技能：</h2>
-        <ul class="content">
-            <li>Python</li>
-            <li>java</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Pine Script</li>
-        </ul>
-      </div>
-      <div class="clearfix"></div>
-  
-  
-    <div id="3">
-      <h2 class="card3">經歷:</h2>
-        <div class="content">
-          <p>大一上學期:管理學</p>
-          <p>參加慈善活動,並且該活動為我提高個人技能和能力，例如組織能力、溝通技巧、問題解決能力等等。</p>
-          <p>大一下學期:企業概論</p>
-          <p>創建個人品牌,負責設計並執行市場推廣策略，制定行銷計劃，協調各部門的合作，並負責推廣活動的組織和執行。</p>
-          <p>大二上學期:網路程式設計</p>
-          <p>設計網頁後台，令我了解網站內容：網頁後台可以讓管理員方便地更新和維護網站的內容，包括文字、圖片、視頻等等，從而保持網站的最新和精確。</p>
+    <!-- (三) 個人專業與技能 -->
+    <div id="1" class="skills-section">
+      <h2 class="card1">個人專業與技能</h2>
+      
+      <div class="skills-container">
+        <!-- 分段能量條 -->
+        <div class="skills-column">
+          <h3>專業技能</h3>
+          <div class="skill-item">
+            <span class="skill-name">前端網頁開發</span>
+            <div class="progress-bar">
+              <div class="progress-segment" style="width: 85%"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">後端網頁</span>
+            <div class="progress-bar">
+              <div class="progress-segment" style="width: 75%"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">製作量化交易策略</span>
+            <div class="progress-bar">
+              <div class="progress-segment" style="width: 80%"></div>
+            </div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">資料庫管理</span>
+            <div class="progress-bar">
+              <div class="progress-segment" style="width: 70%"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
         </div>
+
+        <!-- 圓形進度條 -->
+        <div class="skills-column">
+          <h3>程式技能</h3>
+          <div class="circular-skills">
+            <div class="circular-progress-item">
+              <div class="circular-progress" data-percent="90">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="progress-ring-circle" cx="60" cy="60" r="50" data-percent="90"></circle>
+                </svg>
+                <div class="progress-text">90%</div>
+              </div>
+              <span class="circular-skill-name">Python</span>
+            </div>
+            <div class="circular-progress-item">
+              <div class="circular-progress" data-percent="75">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="progress-ring-circle" cx="60" cy="60" r="50" data-percent="75"></circle>
+                </svg>
+                <div class="progress-text">75%</div>
+              </div>
+              <span class="circular-skill-name">Java</span>
+            </div>
+            <div class="circular-progress-item">
+              <div class="circular-progress" data-percent="85">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="progress-ring-circle" cx="60" cy="60" r="50" data-percent="85"></circle>
+                </svg>
+                <div class="progress-text">85%</div>
+              </div>
+              <span class="circular-skill-name">JavaScript</span>
+            </div>
+            <div class="circular-progress-item">
+              <div class="circular-progress" data-percent="80">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="progress-ring-circle" cx="60" cy="60" r="50" data-percent="80"></circle>
+                </svg>
+                <div class="progress-text">80%</div>
+              </div>
+              <span class="circular-skill-name">SQL</span>
+            </div>
+            <div class="circular-progress-item">
+              <div class="circular-progress" data-percent="70">
+                <svg class="progress-ring" width="120" height="120">
+                  <circle class="progress-ring-circle-bg" cx="60" cy="60" r="50"></circle>
+                  <circle class="progress-ring-circle" cx="60" cy="60" r="50" data-percent="70"></circle>
+                </svg>
+                <div class="progress-text">70%</div>
+              </div>
+              <span class="circular-skill-name">Pine Script</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  
+  
+    <!-- (四) 個人經歷 -->
+    <div id="3" class="experience-section">
+      <h2 class="card3">個人經歷</h2>
+      <div class="experience-container">
+        <div class="experience-item">
+          <div class="experience-image">
+            <img src="image/management.jpg" alt="管理學">
+          </div>
+          <div class="experience-content">
+            <h3>大一上學期：管理學</h3>
+            <p>參加慈善活動，並且該活動為我提高個人技能和能力，例如組織能力、溝通技巧、問題解決能力等等。</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-image">
+            <img src="image/business.jpg" alt="企業概論">
+          </div>
+          <div class="experience-content">
+            <h3>大一下學期：企業概論</h3>
+            <p>創建個人品牌，負責設計並執行市場推廣策略，制定行銷計劃，協調各部門的合作，並負責推廣活動的組織和執行。</p>
+          </div>
+        </div>
+        <div class="experience-item">
+          <div class="experience-image">
+            <img src="image/web-programming.jpg" alt="網路程式設計">
+          </div>
+          <div class="experience-content">
+            <h3>大二上學期：網路程式設計</h3>
+            <p>設計網頁後台，令我了解網站內容：網頁後台可以讓管理員方便地更新和維護網站的內容，包括文字、圖片、視頻等等，從而保持網站的最新和精確。</p>
+          </div>
+        </div>
+      </div>
     </div>
       
     
